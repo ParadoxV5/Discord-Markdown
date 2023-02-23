@@ -1,6 +1,7 @@
-> Kudos to @matthewzring (and `Discord@Frosty#9449`) for the [101 Guide][] (from which this guide was modified).
+> Kudos to [@matthewzring][] (and `Discord@Frosty#9449`) for the [101 Guide][] (from which this guide was modified).
 > But – if only it’s enough! Discord needs some comprehensive and updated documentation…
 
+[@matthewzring]: https://github.com/matthewzring
 [101 Guide]: https://gist.github.com/matthewzring/9f7bbfd102003963f9be7dbcf7d40e51
 
 
