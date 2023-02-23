@@ -16,11 +16,11 @@ Just add a few ornaments around your text to change it!
 
 | Style | Markdown |
 |-|-|
-| *Italics* | `*italics*`◊ or `_italics_` |
+| *Italics* | `*italics*` or `_italics_` |
 | **Bold** |  `**Bold**` |
-| <u>Underline</u> | `__Underline__`§ |
+| <u>Underline</u> | `__Underline__` |
 | ~~Strikethrough~~ | `~~Strikethrough~~` |
-| ![black rectangle](images/spoiler0.png) ![spoiler text revealed](images/spoiler1.png) | `\|\|Spoiler\|\|`§† |
+| ![black rectangle](images/spoiler0.png) ![spoiler text revealed](images/spoiler1.png) | `\|\|Spoiler\|\|` |
 
 <details>
   
