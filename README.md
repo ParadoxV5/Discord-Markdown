@@ -66,7 +66,7 @@ The point of double backticks (``` `` ```) is in case you want to put single bac
 
 ![backtick](images/code2.png)
 
-You can also create multiline code blocks by placing triple backticks (````` ``` ````) before and after it.
+You can also create multiline code blocks by placing triple backticks (```` ``` ````) before and after it.
 Although Discord (unlike other Markdown apps) doesn’t require so *(most of the time – you’ll soon see)*,
 the good habit is to place them on lines separate from the contents to be consistent.
 A great convenience for Desktop/Web is that, while under a block code,
