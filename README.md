@@ -14,8 +14,9 @@ Just add a few ornaments around your text to change it!
 
 ## Sweet Styles
 
-| *Italics* | `*italics*`◊ or `_italics_` |
+| Style | Markdown |
 |-|-|
+| *Italics* | `*italics*`◊ or `_italics_` |
 | **Bold** |  `**Bold**` |
 | <u>Underline</u> | `__Underline__`§ |
 | ~~Strikethrough~~ | `~~Strikethrough~~` |
