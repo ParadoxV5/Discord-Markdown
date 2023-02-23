@@ -112,10 +112,12 @@ Multiline block quotes save the need to punch `> ` on every line, especially for
 ![code block quote](images/quote5.png)
 
 In Desktop/Web’s message box, both `> ` and `>>> ` directly becomes a gray quote-indent line in front of that line,
-similar to how Discord formats quotes in the chat. If you start a new line from this indented text,
+similar to how Discord formats quotes in the chat. If you start a new line[^n] from this indented text,
 Discord conveniently quote-indent your new line for you.
-*(What’s that? You didn’t know you can send multiline messages on Desktop/Web with `⇧ Shift` + `↩ Enter`/`⌅ Return`?)*
 Hitting `⌫ Backspace` next to the quote-indent deletes it and brings you out of the block quote (as expected).
+
+[^n]: *What’s that? You didn’t know you can send multiline messages on Desktop/Web with `⇧ Shift` + `↩ Enter`/`⌅ Return`?*
+
 A side effect of this *convenience* is that Desktop/Web Discord does not distinguish `>>> `-based multiline quotes from
 `> `-based ones and cannot create them; fortunately, those sent from Mobile are still formatted in the chat.
 
