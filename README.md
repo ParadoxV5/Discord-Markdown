@@ -32,7 +32,8 @@ Just add a few ornaments around your text to change it!
 [spoiler]: https://support.discord.com/hc/en-us/articles/360022320632-Spoiler-Tags-
 
 On Desktop/Web, you can see a preview of your formatted text right in the message box;
-at this writing, you’re gonna need some imagination while on Mobile 👌.
+You’re gonna need some imagination if you are a Mobile user or switched on the
+*legacy chat input* in the Accessibility settings 👌.
 
 ![Underline Bold Italics](images/markdown1.png)
 
@@ -76,7 +77,8 @@ pressing `↩ Enter`/`⌅ Return` starts a new line instead of posting your half
 
 For those coders out there, to *really* spice up your code blocks,
 you can denote a specific coding language by typing its name/ID right after the backticks that start your code block.
-On Desktop/Web, you get fancy-schmancy **syntax highlighting** if Discord supports the language.
+If Discord supports the language,
+Desktop/Web gets fancy-schmancy **syntax highlighting** in both the chat and the non-legacy editor.
 Mobile does not support syntax highlighting (yet?).
 
 > ![Ruby Discord Rule 7 (syntax highlighting)](images/code4.png)
@@ -111,18 +113,19 @@ Multiline block quotes save the need to punch `> ` on every line, especially for
 
 ![code block quote](images/quote5.png)
 
-In Desktop/Web’s message box, both `> ` and `>>> ` directly becomes a gray quote-indent line in front of that line,
+On Desktop/Web not using the *legacy chat input* from the Accessibilities menu,
+both `> ` and `>>> ` also directly become a gray quote-indent line in front of their line inside the message box,
 similar to how Discord formats quotes in the chat. If you start a new line[^n] from this indented text,
 Discord conveniently quote-indent your new line for you.
 Hitting `⌫ Backspace` next to the quote-indent deletes it and brings you out of the block quote (as expected).
 
-[^n]: *What’s that? You didn’t know you can send multiline messages on Desktop/Web with `⇧ Shift` + `↩ Enter`/`⌅ Return`?*
+[^n]: *Huh? You didn’t know you can send multiline messages on Desktop/Web with `⇧ Shift` + `↩ Enter`/`⌅ Return`?*
 
-A side effect of this *convenience* is that Desktop/Web Discord does not distinguish `>>> `-based multiline quotes from
-`> `-based ones and cannot create them; fortunately, those sent from Mobile are still formatted in the chat.
+A side effect of this *convenience* is that Desktop/Web’s non-legacy editor does not distinguish `>>> `-based multiline
+quotes from `> `-based ones and cannot create them; fortunately, those sent from Mobile are still formatted in the chat.
 
-![multiline quote on desktop/web](images/quote4.png)
-![code quote on desktop/web](images/quote6.png)
+![multiline quote on new editor](images/quote4.png)
+![code quote on new editor](images/quote6.png)
 
 
 > And now you’re a **Discord text Markdown super-expert**. Go out there and highlight your accomplishments!
