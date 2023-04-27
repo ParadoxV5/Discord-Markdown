@@ -113,11 +113,13 @@ though Discord rounds indents up and allows extra spaces in the indent[^d]. Like
 the monospace font of a temporary [code block](#code-blocks) can aid if counting spaces gets tedious.
 Indents on the first list level is inconsistent between on Mobile compared to Desktop/Web at this writing[^1].
 
-> ![Indent mechanics, rendered](images/list3.png)
 > ```
 > * Level 1 line
 >  * Discords rounds up
 >   * but for consistency, you should match Level 0’s indent
+>    * same deal at other levels
+>     * this Level 2 has 4 characters for the index
+>      * so indents with 4 spaces or less are all level 3
 > * another Level 1
 >    * extra indents have no effect
 >     * other than requiring more spacebar strikes
@@ -128,6 +130,7 @@ Indents on the first list level is inconsistent between on Mobile compared to De
 >   * this Level 1 has 3 characters for the index
 >    * so indents with 3 spaces or less are all level 2
 > ```
+> ![Indent mechanics, rendered](images/list3.png)
 
 For Discord Markdown, only the first list line determines the list index (you can start with any ),
 thus the indices of your list doesn’t need to match (only the first index declares a bullet or the starting number),
