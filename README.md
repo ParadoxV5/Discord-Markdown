@@ -94,6 +94,7 @@ Discord takes that you forgot the good habit and treats it as part of your conte
 
 ![block code](images/code5.png)
 
+
 ## Block Quotes
 
 To turn messages into Block Quotes, start your lines with `> ` or `>>> ` (including the one space).
@@ -128,6 +129,15 @@ quotes from `> `-based ones and cannot create them; fortunately, those sent from
 
 ![multiline quote on new editor](images/quote4.png)
 ![code quote on new editor](images/quote6.png)
+
+
+## Headings[^1]
+
+To create a heading, prefix a line with 1–3 hashtags(`#`) followed by one or more spaces. The more `#`s, the smaller the heading. Markdown supports up to six `#`s, though Discord Markdown only goes to three.
+
+![headings](images/headings.png)
+
+Yes, you can mix-and-match [Sweet Styles](#sweet-styles) inside your headings too. Headings are **Bold** by default though, so **Bold** does nothing in headings.
 
 
 > And now you’re a **Discord text Markdown super-expert**. Go out there and highlight your accomplishments!
