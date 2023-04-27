@@ -23,8 +23,9 @@ Just add a few ornaments around your text to change it!
 | ![black rectangle](images/spoiler0.png) ![spoiler text revealed](images/spoiler1.png) | `\|\|Spoiler\|\|`[^d][^s] |
 | [Link](https://example.com/) | `[Link](https://example.com/)`[^1] |
 
-On Desktop/Web, you can see a preview of your text formatted with these options (except [Link](https://example.com/))
-right in the message box. You’re gonna need some imagination if you are a Mobile user or switched on the
+On Desktop/Web, you can see a preview of your text formatted with these options
+(except [Link](https://example.com/) at this writing[^1]) right in the message box.
+You’re gonna need some imagination if you are a Mobile user or switched on the
 *legacy chat input* in the Accessibility settings 👌.
 
 ![Underline Bold Italics](images/markdown1.png)
@@ -95,12 +96,51 @@ Discord takes that you forgot the good habit and treats it as part of your conte
 
 ## Lists[^1]
 
-You can create a bullet list with either `*` or `-` and one or more spaces beginning each bullet line. For a numbered list, begin each numbered line with a number, a dot and one or more spaces (e.g., `1. `).
+* You can start a bullet list with either `*` or `-` and one or more spaces beginning the line.
 
-For Discord Markdown, only the first list line determines the list index, thus the numbers of your numbered list doesn’t have to be in numerical order (only the first index declares the starting number), but consequently bullet and numbered list can’t mix in the same sub/list.
+1. For a numbered list, begin the numbered line with *any* non-negative number, a period and one or more spaces (e.g., `1. `).
 
-![Bullet points after a numbered list start becomes numbered lines](images/mixed_list.png)[^d]
+![Two bullet lines and two numbered lines](images/list1.png)
 
+Lists don’t have previews in the message box at this writing[^1].
+
+Within a list, you can indent lines (*list or regular lines!*) by padding spaces in front.
+
+![List continuation](images/list2.png)
+
+The spaces count should match the number of characters in the index part of the previous level,
+though Discord rounds indents up and allows extra spaces in the indent[^d]. Like with ASCII art,
+the monospace font of a temporary [code block](#code-blocks) can aid if counting spaces gets tedious.
+Indents on the first list level is inconsistent between on Mobile compared to Desktop/Web at this writing[^1].
+
+>>> ![Indent mechanics, rendered](images/list3.png)
+```
+* Level 1 line
+ * Discords rounds up
+  * but for consistency, you should match Level 0’s indent
+* another Level 1
+   * extra indents have no effect
+    * other than requiring more spacebar strikes
+*   Level 1 with 2 extra spaces after `*`
+  * this Level 1 has 4 characters for the index
+    * so indents with 4 spaces or less are all level 2
+1. same deal with number indices
+  * this Level 1 has 3 characters for the index
+   * so indents with 3 spaces or less are all level 2
+```
+
+For Discord Markdown, only the first list line determines the list index (you can start with any ),
+thus the indices of your list doesn’t need to match (only the first index declares a bullet or the starting number),
+but consequently bullet and numbered list can’t mix in the same sub/list.
+
+![Bullet points after a numbered list start becomes numbered lines](images/list4.png)[^d]
+
+At this writing[^1], the formatting choice of numbered indices are also inconsistent across Desktop, Web and Mobile:
+
+* Desktop can start a numbered list at at most 50. (E.g., `69. ` on the first list line shows up as 50.) (Smells like 🐛)
+* Mobile uses Arabic numerals for all list levels.
+  Desktop/Web uses lowercase Roman numerals for level 2 for 1–3999 and falls back to Arabic numerals for 0 and ≥4000,
+  and lowercase English alphabets (base-26) for level 3 and deeper.
 
 ## Block Quotes
 
