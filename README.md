@@ -23,13 +23,6 @@ Just add a few ornaments around your text to change it!
 | ![black rectangle](images/spoiler0.png) ![spoiler text revealed](images/spoiler1.png) | `\|\|Spoiler\|\|`[^d][^s] |
 | [Link](https://example.com/) | `[Link](https://example.com/)`[^1] |
 
-[^x]: On Desktop/Web, does not apply if a space follows the first `*` (i.e., `* text*` or `* text *`)
-      [tested Web 192149, Desktop PTB 193325]. On Mobile, also does not apply if a space precedes the second `*`
-      (i.e., `*text *` or `* text *`) [tested Mobile 175.16].
-[^d]: These are possibly unique to Discord’s Markdown and not found on other Markdown apps like GitHub
-[^s]: Also check out: [Discord’s support article on spoilers](https://support.discord.com/hc/en-us/articles/360022320632-Spoiler-Tags-)
-[^1]: New Stuff! I discovered them on Web 192149, Desktop PTB 193325 and Mobile 175.16
-
 On Desktop/Web, you can see a preview of your text formatted with these options (except [Link](https://example.com/))
 right in the message box. You’re gonna need some imagination if you are a Mobile user or switched on the
 *legacy chat input* in the Accessibility settings 👌.
@@ -103,6 +96,15 @@ Discord takes that you forgot the good habit and treats it as part of your conte
 ![block code](images/code5.png)
 
 
+## Lists[^1]
+
+You can create a bullet list with either `*` or `-` and one or more spaces beginning each bullet line. For a numbered list, begin each numbered line with a number, a dot and one or more spaces (e.g., `1. `).
+
+For Discord Markdown, only the first list line determines the list index, thus the numbers of your numbered list doesn’t have to be in numerical order (only the first index declares the starting number), but consequently bullet and numbered list can’t mix in the same sub/list.
+
+![Bullet points after a numbered list start becomes numbered lines](mixlist.png)[^d]
+
+
 ## Block Quotes
 
 To turn messages into Block Quotes, start your lines with `> ` or `>>> ` (including the one space).
@@ -130,8 +132,6 @@ similar to how Discord formats quotes in the chat. If you start a new line[^n] f
 Discord conveniently quote-indent your new line for you.
 Hitting `⌫ Backspace` next to the quote-indent deletes it and brings you out of the block quote (as expected).
 
-[^n]: *Huh? You didn’t know you can send multiline messages on Desktop/Web with `⇧ Shift` + `↩ Enter`/`⌅ Return`?*
-
 A side effect of this *convenience* is that Desktop/Web’s non-legacy editor does not distinguish `>>> `-based multiline
 quotes from `> `-based ones and cannot create them; fortunately, those sent from Mobile are still formatted in the chat.
 
@@ -151,3 +151,12 @@ Yes, you can mix-and-match [Sweet Styles](#sweet-styles) inside your headings to
 ---
 
 > And now you’re a **Discord text Markdown super-expert**. Go out there and highlight your accomplishments!
+
+
+[^x]: On Desktop/Web, does not apply if a space follows the first `*` (i.e., `* text*` or `* text *`)
+      [tested Web 192149, Desktop PTB 193325]; on Mobile, also does not apply if a space precedes the second `*`
+      (i.e., `*text *` or `* text *`) [tested Mobile 175.16]
+[^d]: These are possibly unique to Discord’s Markdown and not found on other Markdown apps like GitHub
+[^s]: Also check out: [Discord’s support article on spoilers](https://support.discord.com/hc/en-us/articles/360022320632-Spoiler-Tags-)
+[^1]: New Stuff! I discovered them on Web 192149, Desktop PTB 193325 and Mobile 175.16
+[^n]: *Huh? You didn’t know you can send multiline messages on Desktop/Web with `⇧ Shift` + `↩ Enter`/`⌅ Return`?*
