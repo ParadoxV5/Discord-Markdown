@@ -27,26 +27,33 @@ Just add a few ornaments around your text to change it!
       [tested Web 192149, Desktop PTB 193325]. On Mobile, also does not apply if a space precedes the second `*`
       (i.e., `*text *` or `* text *`) [tested Mobile 175.16].
 [^d]: These are possibly unique to Discord’s Markdown and not found on other Markdown apps like GitHub
-[^s]: Also check out [Discord’s support article on spoilers](https://support.discord.com/hc/en-us/articles/360022320632-Spoiler-Tags-).
+[^s]: Also check out: [Discord’s support article on spoilers](https://support.discord.com/hc/en-us/articles/360022320632-Spoiler-Tags-)
 [^1]: New Stuff! I discovered them on Web 192149, Desktop PTB 193325 and Mobile 175.16
 
-On Desktop/Web, you can see a preview of your formatted text right in the message box;
-You’re gonna need some imagination if you are a Mobile user or switched on the
+On Desktop/Web, you can see a preview of your text formatted with these options (except [Link](https://example.com/))
+right in the message box. You’re gonna need some imagination if you are a Mobile user or switched on the
 *legacy chat input* in the Accessibility settings 👌.
 
 ![Underline Bold Italics](images/markdown1.png)
 
-It doesn’t show on the Desktop/Web preview (at this writing), but formatting can span multiple lines![^n][^1]
+It doesn’t show on the Desktop/Web preview (at this writing), but *formatting can span multiple lines*![^n][^1]
 
 ![Formatting Gallery, using multiline text](images/markdown2.png)
 
 You can even mix n’ match formatting options into more powerful ones, such as ***<u>underline bold italics</u>***
 (`**___underline bold italics___**` or `*__**underline bold italics**__*` or etc.).
 
+Just dropping a web address without the `[]()` markdown also *links* it up, which you’ve probably done it several times.
+Both types of links also supports previews if the linked site has them set up.
+
+![Two formats of links and their previews](images/link.png)
+
 Don’t want to invoke Markdown?
 **You can slap a backslash`\` directly preceding the expression, and it’ll escape the formatting.
 The same goes with any backslash Markdown thinks you are escaping something with.**
 You’ll see the arms of your customized shruggie as you’d like!
+(Web addresses on their own has no Markdown and can’t be escaped,
+but linked text is Markdown and escaping it exposes its web address which gets linked on its own.)
 
 ![shruggie](images/markdown0.png)
 
