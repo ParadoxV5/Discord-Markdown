@@ -113,21 +113,21 @@ though Discord rounds indents up and allows extra spaces in the indent[^d]. Like
 the monospace font of a temporary [code block](#code-blocks) can aid if counting spaces gets tedious.
 Indents on the first list level is inconsistent between on Mobile compared to Desktop/Web at this writing[^1].
 
->>> ![Indent mechanics, rendered](images/list3.png)
-```
-* Level 1 line
- * Discords rounds up
-  * but for consistency, you should match Level 0’s indent
-* another Level 1
-   * extra indents have no effect
-    * other than requiring more spacebar strikes
-*   Level 1 with 2 extra spaces after `*`
-  * this Level 1 has 4 characters for the index
-    * so indents with 4 spaces or less are all level 2
-1. same deal with number indices
-  * this Level 1 has 3 characters for the index
-   * so indents with 3 spaces or less are all level 2
-```
+> ![Indent mechanics, rendered](images/list3.png)
+> ```
+> * Level 1 line
+>  * Discords rounds up
+>   * but for consistency, you should match Level 0’s indent
+> * another Level 1
+>    * extra indents have no effect
+>     * other than requiring more spacebar strikes
+> *   Level 1 with 2 extra spaces after `*`
+>   * this Level 1 has 4 characters for the index
+>     * so indents with 4 spaces or less are all level 2
+> 1. same deal with number indices
+>   * this Level 1 has 3 characters for the index
+>    * so indents with 3 spaces or less are all level 2
+> ```
 
 For Discord Markdown, only the first list line determines the list index (you can start with any ),
 thus the indices of your list doesn’t need to match (only the first index declares a bullet or the starting number),
@@ -153,7 +153,7 @@ such as Google or (back when Replies weren’t a thing) other people’s message
 ![single-line block quote](images/quote1.png)
 
 On Mobile (and ancient versions of Discord such as the one 101 used),
-`>>> ` at the beginning of a line of text puts that line and the rest of your message in a multiline block quote.
+`>>> ` at the beginning of a line of text puts that line and the rest of your message in a multiline block quote.[^d]
 [This screenshot was retaken on Mobile 175.16; Mobile 165.15 was missing the gray quote-indent line.]
 
 ![multiline block quote](images/quote3.png)
