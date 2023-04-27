@@ -62,13 +62,10 @@ code blocks are also unique because they disable Markdown formatting for their c
 
 You can make some of your text `code-looking` with `inline code` (like what I’ve done in this guide)
 by wrapping them in single or double backticks`` ` `` the same way as bolds and italics.
-
-![inline code](images/code1.png)
-
 The point of double backticks (``` `` ```) is in case you want to put single backticks (`` ` ``) in there.
 (Because code formatting disables Markdown inside, backslashes`\` are out too.)
 
-![backtick](images/code2.png)
+![inline code](images/code1.png)
 
 You can also create multiline code blocks by placing triple backticks (```` ``` ````) before and after it.
 Although Discord (unlike other Markdown apps) doesn’t require so *(most of the time – you’ll soon see)*,
@@ -102,7 +99,7 @@ You can create a bullet list with either `*` or `-` and one or more spaces begin
 
 For Discord Markdown, only the first list line determines the list index, thus the numbers of your numbered list doesn’t have to be in numerical order (only the first index declares the starting number), but consequently bullet and numbered list can’t mix in the same sub/list.
 
-![Bullet points after a numbered list start becomes numbered lines](mixlist.png)[^d]
+![Bullet points after a numbered list start becomes numbered lines](images/mixed_list.png)[^d]
 
 
 ## Block Quotes
