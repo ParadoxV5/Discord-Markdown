@@ -17,16 +17,18 @@ Just add a few ornaments around your text to change it!
 | Style | Markdown |
 |-|-|
 | *Italics* | `*italics*`[^s] or `_italics_` |
-| **Bold** |  `**Bold**` |
+| **Bold** | `**Bold**` |
 | <u>Underline</u> | `__Underline__`[^d] |
 | ~~Strikethrough~~ | `~~Strikethrough~~` |
 | ![black rectangle](images/spoiler0.png) ![spoiler text revealed](images/spoiler1.png) | `\|\|Spoiler\|\|`[^d][^m] |
+| [Link](https://example.com/) | `[Link](https://example.com/)` |
 
 [^s]: Does not apply if a space follows the first `*` (i.e., `* text*` or `* text *`) [tested PTB 175517]
 [^d]: These are possibly unique to Discord’s Markdown and not found on other Markdown apps like GitHub
 [^m]: Unlike other formatting options, spoilers can span multiple lines.
       Check out [Discord’s support article on spoilers][spoiler].
-  
+[^1]: New Stuff! I discovered them on Desktop 192149, Desktop PTB 193325 and Mobile 175.16
+
 </details>
 
 [spoiler]: https://support.discord.com/hc/en-us/articles/360022320632-Spoiler-Tags-
