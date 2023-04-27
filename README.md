@@ -15,7 +15,7 @@ Just add a few ornaments around your text to change it!
 ## Sweet Styles
 
 | Style | Markdown |
-|-|-|
+|:-:|:-:|
 | *Italics* | `*italics*`[^x] or `_italics_` |
 | **Bold** | `**Bold**` |
 | <u>Underline</u> | `__Underline__`[^d] |
@@ -46,7 +46,7 @@ You can even mix n’ match formatting options into more powerful ones, such as 
 Just dropping a web address without the `[]()` markdown also *links* it up, which you’ve probably done it several times.
 Both types of links also supports previews if the linked site has them set up.
 
-![Two formats of links and their previews](images/link.png)
+![Two formats of links and their previews](images/links.png)
 
 Don’t want to invoke Markdown?
 **You can slap a backslash`\` directly preceding the expression, and it’ll escape the formatting.
