@@ -104,12 +104,12 @@ such as Google or (back when Replies weren’t a thing) other people’s message
 
 On Mobile (and ancient versions of Discord such as the one 101 used),
 `>>> ` at the beginning of a line of text puts that line and the rest of your message in a multiline block quote.
-[This screenshot taken on Build 165.15 is missing the gray quote-indent line – did I just catch a 🐛‽]
+[This screenshot was retaken on Mobile 175.16; Mobile 165.15 was missing the gray quote-indent line.]
 
 ![multiline block quote](images/quote3.png)
 
 Multiline block quotes save the need to punch `> ` on every line, especially for code blocks which disable Markdown.
-[This screenshot taken on Build 165.15 is missing a space – another 🐛‽]
+[This screenshot taken on Mobile 165.15 is missing a leading space – possibly a 🐛?]
 
 ![code block quote](images/quote5.png)
 
