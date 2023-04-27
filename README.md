@@ -16,28 +16,29 @@ Just add a few ornaments around your text to change it!
 
 | Style | Markdown |
 |-|-|
-| *Italics* | `*italics*`[^s] or `_italics_` |
+| *Italics* | `*italics*`[^x] or `_italics_` |
 | **Bold** | `**Bold**` |
 | <u>Underline</u> | `__Underline__`[^d] |
 | ~~Strikethrough~~ | `~~Strikethrough~~` |
-| ![black rectangle](images/spoiler0.png) ![spoiler text revealed](images/spoiler1.png) | `\|\|Spoiler\|\|`[^d][^m] |
-| [Link](https://example.com/) | `[Link](https://example.com/)` |
+| ![black rectangle](images/spoiler0.png) ![spoiler text revealed](images/spoiler1.png) | `\|\|Spoiler\|\|`[^d][^s] |
+| [Link](https://example.com/) | `[Link](https://example.com/)`[^1] |
 
-[^s]: Does not apply if a space follows the first `*` (i.e., `* text*` or `* text *`) [tested PTB 175517]
+[^x]: On Desktop/Web, does not apply if a space follows the first `*` (i.e., `* text*` or `* text *`)
+      [tested Web 192149, Desktop PTB 193325]. On Mobile, also does not apply if a space precedes the second `*`
+      (i.e., `*text *` or `* text *`) [tested Mobile 175.16].
 [^d]: These are possibly unique to Discord’s Markdown and not found on other Markdown apps like GitHub
-[^m]: Unlike other formatting options, spoilers can span multiple lines.
-      Check out [Discord’s support article on spoilers][spoiler].
-[^1]: New Stuff! I discovered them on Desktop 192149, Desktop PTB 193325 and Mobile 175.16
-
-</details>
-
-[spoiler]: https://support.discord.com/hc/en-us/articles/360022320632-Spoiler-Tags-
+[^s]: Also check out [Discord’s support article on spoilers](https://support.discord.com/hc/en-us/articles/360022320632-Spoiler-Tags-).
+[^1]: New Stuff! I discovered them on Web 192149, Desktop PTB 193325 and Mobile 175.16
 
 On Desktop/Web, you can see a preview of your formatted text right in the message box;
 You’re gonna need some imagination if you are a Mobile user or switched on the
 *legacy chat input* in the Accessibility settings 👌.
 
 ![Underline Bold Italics](images/markdown1.png)
+
+It doesn’t show on the Desktop/Web preview (at this writing), but formatting can span multiple lines![^n][^1]
+
+![Formatting Gallery, using multiline text](images/markdown2.png)
 
 You can even mix n’ match formatting options into more powerful ones, such as ***<u>underline bold italics</u>***
 (`**___underline bold italics___**` or `*__**underline bold italics**__*` or etc.).
@@ -139,5 +140,7 @@ To create a heading, prefix a line with 1–3 hashtags(`#`) followed by one or m
 
 Yes, you can mix-and-match [Sweet Styles](#sweet-styles) inside your headings too. Headings are **Bold** by default though, so **Bold** does nothing in headings.
 
+
+---
 
 > And now you’re a **Discord text Markdown super-expert**. Go out there and highlight your accomplishments!
