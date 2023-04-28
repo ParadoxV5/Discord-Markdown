@@ -37,8 +37,8 @@ It doesn’t show on the Desktop/Web preview (at this writing), but *formatting 
 You can even mix n’ match formatting options into more powerful ones, such as ***<u>underline bold italics</u>***
 (`**___underline bold italics___**` or `*__**underline bold italics**__*` or etc.).
 
-Just dropping a web address without the `[]()` markdown also *links* it up, which you’ve probably done it several times.
-Both types of links also supports previews if the linked site has them set up.
+Just dropping a web address without the `[]()` markdown also *links* it up, which you’ve probably done several times.
+Both links also supports previews if the linked site has them set up.
 
 ![Two formats of links and their previews](images/links.png)
 
@@ -46,7 +46,7 @@ Don’t want to invoke Markdown?
 **You can slap a backslash`\` directly preceding the expression, and it’ll escape the formatting.
 The same goes with any backslash Markdown thinks you are escaping something with.**
 You’ll see the arms of your customized shruggie as you’d like!
-(Web addresses on their own has no Markdown and can’t be escaped,
+(A web address on its own has no Markdown and can’t be escaped,
 but linked text is Markdown and escaping it exposes its web address which gets linked on its own.)
 
 ![shruggie](images/markdown0.png)
@@ -104,14 +104,14 @@ Discord takes that you forgot the good habit and treats it as part of your conte
 
 Lists don’t have previews in the message box at this writing[^1].
 
-Within a list, you can indent lines (*list or regular lines!*) by padding spaces in front.
+You can indent lines (*list or regular lines!*) within a list by padding spaces in front.
 
 ![List continuation](images/list2.png)
 
 The spaces count should match the number of characters in the index part of the previous level,
-though Discord rounds indents up and allows extra spaces in the indent[^d]. Like with ASCII art,
+though Discord rounds space counts up and allows extra spaces in the indent[^d]. Like with ASCII art,
 the monospace font of a temporary [code block](#code-blocks) can aid if counting spaces gets tedious.
-Indents on the first list level is inconsistent between on Mobile compared to Desktop/Web at this writing[^1].
+Indents on the first list level are inconsistent between Mobile compared to Desktop/Web at this writing[^1].
 
 > ```
 > * Level 1 line
@@ -132,18 +132,20 @@ Indents on the first list level is inconsistent between on Mobile compared to De
 > ```
 > ![Indent mechanics, rendered](images/list3.png)
 
-For Discord Markdown, only the first list line determines the list index (you can start with any ),
-thus the indices of your list doesn’t need to match (only the first index declares a bullet or the starting number),
-but consequently bullet and numbered list can’t mix in the same sub/list.
+For Discord Markdown, only the first list line decides the list index (you can start with any ).
+Thus, the indices of your list don’t need to match (only the first index declares a bullet or the starting number).
+Consequently, bullet and numbered list can’t mix in the same (sub)list.
 
 ![Bullet points after a numbered list start becomes numbered lines](images/list4.png)[^d]
 
 At this writing[^1], the formatting choice of numbered indices are also inconsistent across Desktop, Web and Mobile:
 
-* Desktop can start a numbered list at at most 50. (E.g., `69. ` on the first list line shows up as 50.) (Smells like 🐛)
+* Desktop can start a numbered list from at most 50.
+  (E.g., `69. ` on the first list line still shows up as 50.) (Strong 🐛 smell here.)
 * Mobile uses Arabic numerals for all list levels.
   Desktop/Web uses lowercase Roman numerals for level 2 for 1–3999 and falls back to Arabic numerals for 0 and ≥4000,
   and lowercase English alphabets (base-26) for level 3 and deeper.
+
 
 ## Block Quotes
 
@@ -162,7 +164,7 @@ On Mobile (and ancient versions of Discord such as the one 101 used),
 ![multiline block quote](images/quote3.png)
 
 Multiline block quotes save the need to punch `> ` on every line, especially for code blocks which disable Markdown.
-[This screenshot taken on Mobile 165.15 is missing a leading space – possibly a 🐛?]
+[Like the screenshot shows, it’s missing a leading space at this writing[^1] – possibly a 🐛?]
 
 ![code block quote](images/quote5.png)
 
@@ -181,11 +183,13 @@ quotes from `> `-based ones and cannot create them; fortunately, those sent from
 
 ## Headings[^1]
 
-To create a heading, prefix a line with 1–3 hashtags(`#`) followed by one or more spaces. The more `#`s, the smaller the heading. Markdown supports up to six `#`s, though Discord Markdown only goes to three.
+To create a heading, prefix a line with 1–3 hashtag`#`s followed by one or more spaces.
+The more `#`s, the smaller the heading. Markdown supports up to six `#`s, though Discord Markdown only goes to three.
 
 ![headings](images/headings.png)
 
-Yes, you can mix-and-match [Sweet Styles](#sweet-styles) inside your headings too. Headings are **Bold** by default though, so **Bold** does nothing in headings.
+Yes, you can mix n’ match [Sweet Styles](#sweet-styles) inside your headings too.
+Headings are **Bold** by default though, so **Bold** does nothing in headings.
 
 
 ---
@@ -193,10 +197,10 @@ Yes, you can mix-and-match [Sweet Styles](#sweet-styles) inside your headings to
 > And now you’re a **Discord text Markdown super-expert**. Go out there and highlight your accomplishments!
 
 
-[^x]: On Desktop/Web, does not apply if a space follows the first `*` (i.e., `* text*` or `* text *`)
-      [tested Web 192149, Desktop PTB 193325]; on Mobile, also does not apply if a space precedes the second `*`
-      (i.e., `*text *` or `* text *`) [tested Mobile 175.16]
-[^d]: These are possibly unique to Discord’s Markdown and not found on other Markdown apps like GitHub
+[^x]: This does not apply on Desktop/Web if a space follows the first `*` (i.e., `* text*` or `* text *`)
+      [tested Web 192149, Desktop PTB 193325]; it also does not apply on Mobile if a space precedes the second `*`
+      (i.e., `*text *` or `* text *`) [tested Mobile 175.16].
+[^d]: These are possibly unique to Discord’s Markdown and not found on other Markdown apps like GitHub.
 [^s]: Also check out: [Discord’s support article on spoilers](https://support.discord.com/hc/en-us/articles/360022320632-Spoiler-Tags-)
-[^1]: New Stuff! I discovered them on Web 192149, Desktop PTB 193325 and Mobile 175.16
+[^1]: New Stuff! I discovered them on Web 192149, Desktop PTB 193325 and Mobile 175.16.
 [^n]: *Huh? You didn’t know you can send multiline messages on Desktop/Web with `⇧ Shift` + `↩ Enter`/`⌅ Return`?*
