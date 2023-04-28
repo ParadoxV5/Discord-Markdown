@@ -1,3 +1,13 @@
+## Update 2023-04-28 UTC 01:25
+
+It looks like Discord reverted all the new features (marked with [[^1]]).
+Checked on Web 193600, Desktop PTB 193660 and Mobile 175.16.
+
+For now, this change will be simply in the form of this notification in case Discord change their minds.
+
+---
+
+
 > Kudos to [@matthewzring][] (and `Discord@Frosty#9449`) for the [101 Guide][] (from which this guide was modified).
 > But – if only it’s enough! Discord needs some comprehensive and updated documentation…
 
