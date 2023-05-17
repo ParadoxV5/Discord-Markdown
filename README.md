@@ -101,7 +101,7 @@ Discord takes that you forgot the good habit and treats it as part of your conte
 
 ![Two bullet lines and two numbered lines](images/list1.png)
 
-Lists don’t have previews in the message box at this writing[^1].
+Lists don’t have previews in the message box at this writing.
 
 You can indent lines (*list or regular lines!*) within a list by padding spaces in front.
 
@@ -136,7 +136,7 @@ Consequently, bullet and numbered list can’t mix in the same (sub)list.
 
 ![Bullet points after a numbered list start becomes numbered lines](images/list4.png)[^d]
 
-At this writing[^1], Discord can start a numbered list from at most 50.
+At this writing, Discord can start a numbered list from at most 50.
 (E.g., `69. ` on the first list line still shows up as 50.) (Strong 🐛 smell here.)
 
 
@@ -157,7 +157,7 @@ On Mobile (and ancient versions of Discord such as the one 101 used),
 ![multiline block quote](images/quote3.png)
 
 Multiline block quotes save the need to punch `> ` on every line, especially for code blocks which disable Markdown.
-(Ignore the missing leading space, it’s a long-running[^1] Mobile-only 🐛 and occurs both inside a block quote and outside.)
+(Ignore the missing leading space, it’s a long-running Mobile-only 🐛 and occurs both inside a block quote and outside.)
 
 ![code block quote](images/quote5.png)
 
@@ -195,7 +195,7 @@ Headings are **Bold** by default though, so **Bold** does nothing in headings.
   (i.e., `*text *` or `* text *`) [tested Mobile 175.16 & 178.19].
 [^d]: These are possibly unique to Discord’s Markdown and not found on other Markdown apps like GitHub.
 [^s]: Also check out: [Discord’s support article on spoilers](https://support.discord.com/hc/en-us/articles/360022320632-Spoiler-Tags-)
-[^1]: New Stuff! Reintroduced on Web 198920, Desktop 198953 and Mobile 178.19 (AKA Discord’s 8th birthday).
+[^1]: New Stuff! Available features were reïntroduced on Web 198920, Desktop 198953 and Mobile 178.19 (Discord’s 8th birthday update).
   They also made a brief apperance on Web 192149, Desktop PTB 193325 and Mobile 175.16 along with the link text style,
   but both were reverted the minute I finished updating this documentation.
 [^n]: *Huh? You didn’t know you can send multiline messages on Desktop/Web with `⇧ Shift` + `↩ Enter`/`⌅ Return`?*
