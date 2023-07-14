@@ -21,25 +21,32 @@ Just add a few ornaments around your text to change it!
 | <u>Underline</u> | `__Underline__`[^d] |
 | ~~Strikethrough~~ | `~~Strikethrough~~` |
 | ![black rectangle](images/spoiler0.png) ![spoiler text revealed](images/spoiler1.png) | `\|\|Spoiler\|\|`[^d][^s] |
-| ~~[Link](https://example.com/)~~ | ~~`[Link](https://example.com/)`~~ (no longer available[^1]) |
+| [Link](https://example.com) | `[Link](https://example.com)` |
 
-On Desktop/Web, you can see a preview of your text formatted with these options right in the message box.
+On Desktop/Web, you can see a preview of your text formatted with these options
+(except for [Link](https://example.com/)) right in the message box.
 You’re gonna need some imagination if you are a Mobile user or switched on the
 *legacy chat input* in the Accessibility settings 👌.
 
 ![Underline Bold Italics](images/markdown1.png)
 
-It doesn’t show on the Desktop/Web preview (at this writing), but *formatting can span multiple lines*![^n][^1]
+It doesn’t show on the Desktop/Web preview (at this writing), but *formatting can span multiple lines*![^n]
 
 ![Formatting Gallery, using multiline text](images/markdown2.png)
 
 You can even mix n’ match formatting options into more powerful ones, such as ***<u>underline bold italics</u>***
 (`**___underline bold italics___**` or `*__**underline bold italics**__*` or etc.).
 
-Just dropping a web address without the `[]()` markdown also *links* it up, which you’ve probably done several times.
-Both links also supports previews if the linked site has them set up.
+Just dropping a web address without the `[]()` markdown also *links* it up (the Desktop/Web preview turns it blue too),
+which you’ve probably done several times. Both links also supports previews if the linked site has them set up.
 
-![Two formats of links and their previews](images/links.png)
+![Two formats of links and their previews](images/link1.png)
+
+By the way, Discord found a way to stop you from hiding rickrolls or malware behind legit links.
+Perhaps this sanitization is why Discord hot-reverted the newer Markdown features
+and didn’t reïntroduce links until a couple of months after the others returned.
+
+![Cannot format a link with a link](images/link2.png)
 
 Don’t want to invoke Markdown?
 **You can slap a backslash`\` directly preceding the expression, and it’ll escape the formatting.
@@ -93,7 +100,7 @@ Discord takes that you forgot the good habit and treats it as part of your conte
 ![block code](images/code5.png)
 
 
-## Lists[^1]
+## Lists
 
 * You can start a bullet list with either `*` or `-` and one or more spaces beginning the line.
 
@@ -174,7 +181,7 @@ quotes from `> `-based ones and cannot create them; fortunately, those sent from
 ![code quote on new editor](images/quote6.png)
 
 
-## Headings[^1]
+## Headings
 
 To create a heading, prefix a line with 1–3 hashtag`#`s followed by one or more spaces.
 The more `#`s, the smaller the heading. Markdown supports up to six `#`s, though Discord Markdown only goes to three.
@@ -195,7 +202,4 @@ Headings are **Bold** by default though, so **Bold** does nothing in headings.
   (i.e., `*text *` or `* text *`) [tested Mobile 175.16 & 178.19].
 [^d]: These are possibly unique to Discord’s Markdown and not found on other Markdown apps like GitHub.
 [^s]: Also check out: [Discord’s support article on spoilers](https://support.discord.com/hc/en-us/articles/360022320632-Spoiler-Tags-)
-[^1]: New Stuff! Available features were reïntroduced on Web 198920, Desktop 198953 and Mobile 178.19 (Discord’s 8th birthday update).
-  They also made a brief apperance on Web 192149, Desktop PTB 193325 and Mobile 175.16 along with the link text style,
-  but both were reverted the minute I finished updating this documentation.
 [^n]: *Huh? You didn’t know you can send multiline messages on Desktop/Web with `⇧ Shift` + `↩ Enter`/`⌅ Return`?*
