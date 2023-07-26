@@ -143,9 +143,6 @@ Consequently, bullet and numbered list can’t mix in the same (sub)list.
 
 ![Bullet points after a numbered list start becomes numbered lines](images/list4.png)[^d]
 
-At this writing, Discord can start a numbered list from at most 50.
-(E.g., `69. ` on the first list line still shows up as 50.) (Strong 🐛 smell here.)
-
 
 ## Block Quotes
 
