@@ -156,14 +156,10 @@ such as Google or (back when Replies weren’t a thing) other people’s message
 
 On Mobile (and ancient versions of Discord such as the one 101 used),
 `>>> ` at the beginning of a line of text puts that line and the rest of your message in a multiline block quote.[^d]
+This saves you the need to punch `> ` on every line, especially for a long passages.
 [This screenshot was retaken on Mobile 175.16; Mobile 165.15 was missing the gray quote-indent line.]
 
 ![multiline block quote](images/quote3.png)
-
-Multiline block quotes save the need to punch `> ` on every line, especially for code blocks which disable Markdown.
-(Ignore the missing leading space, it’s a long-running Mobile-only 🐛 and occurs both inside a block quote and outside.)
-
-![code block quote](images/quote5.png)
 
 On Desktop/Web not using the *legacy chat input* from the Accessibilities menu,
 both `> ` and `>>> ` also directly become a gray quote-indent line in front of their line inside the message box,
@@ -171,11 +167,20 @@ similar to how Discord formats quotes in the chat. If you start a new line[^n] f
 Discord conveniently quote-indent your new line for you.
 Hitting `⌫ Backspace` next to the quote-indent deletes it and brings you out of the block quote (as expected).
 
-A side effect of this *convenience* is that Desktop/Web’s non-legacy editor does not distinguish `>>> `-based multiline
-quotes from `> `-based ones and cannot create them; fortunately, those sent from Mobile are still formatted in the chat.
-
 ![multiline quote on new editor](images/quote4.png)
-![code quote on new editor](images/quote6.png)
+
+A side effect of this *convenience* is that Desktop/Web’s non-legacy editor does not distinguish `>>> `-based multiline
+quotes from `> `-based ones and cannot create them. Problematic back when code blocks disabled even the quote Markdown.
+Fortunately, those sent from Mobile are still formatted in the chat.
+(Ignore the missing leading space, it’s a long-running Mobile-only 🐛 and occurs both inside a block quote and outside.)
+
+![code block quote](images/quote5.png)
+![triple-`>` block code quote on new editor](images/quote6.png)
+
+To quote a code block, prefixing your `> `s down the code block. Works on any platform,
+just that with Desktop/Web’s code block preview, stabbing it right through the code block looks rather odd.
+
+![multi-`>` block code quote on new editor](images/quote7.png)
 
 
 ## Headings
