@@ -11,6 +11,12 @@ Wanna inject some flavor into your everyday text chat? You’re in luck!
 Discord uses a variant of Markdown, a simple plain-text formatting system that **makes your sentences stand out**.
 Just add a few ornaments around your text to change it!
 
+> Don’t want to invoke Markdown?
+> **You can slap a backslash`\` directly preceding the expression, and it’ll escape the formatting.
+> The same goes with any backslash that Markdown thinks you are escaping something with.**
+> You’ll see the arms of your customized shruggie as you’d like!
+> 
+> ![shruggie](images/markdown0.png)
 
 ## Sweet Styles
 
@@ -37,8 +43,9 @@ It doesn’t show on the Desktop/Web preview (at this writing), but *formatting 
 You can even mix n’ match formatting options into more powerful ones, such as ***<u>underline bold italics</u>***
 (`**___underline bold italics___**` or `*__**underline bold italics**__*` or etc.).
 
-Just dropping a web address without the `[]()` markdown also *links* it up (the Desktop/Web preview turns it blue too),
-which you’ve probably done several times. Both links also supports previews if the linked site has them set up.
+Just dropping a web address without the `[]()` markdown also *links* it up,
+which you’ve probably done several times. Note that a “plain” link isn’t based on Markdown, so `\` won’t “unlink” it.
+Both “plain” and “masked” links also supports previews if the linked site has them set up.
 
 ![Two formats of links and their previews](images/link1.png)
 
@@ -48,14 +55,6 @@ and didn’t reïntroduce links until a couple of months after the others return
 
 ![Cannot format a link with a link](images/link2.png)
 
-Don’t want to invoke Markdown?
-**You can slap a backslash`\` directly preceding the expression, and it’ll escape the formatting.
-The same goes with any backslash Markdown thinks you are escaping something with.**
-You’ll see the arms of your customized shruggie as you’d like!
-(A web address on its own has no Markdown and can’t be escaped,
-but linked text is Markdown and escaping it exposes its web address which gets linked on its own.)
-
-![shruggie](images/markdown0.png)
 
 
 ## Code Blocks
@@ -105,6 +104,7 @@ Discord takes that you forgot the good habit and treats it as part of your conte
 * You can start a bullet list with either `*` or `-` and one or more spaces beginning the line.
 
 1. For a numbered list, begin the numbered line with *any* non-negative number, a period and one or more spaces (e.g., `1. `).
+   * To escape a number list, backslash the dot. E.g., `1\.`
 
 ![Two bullet lines and two numbered lines](images/list1.png)
 
@@ -138,7 +138,8 @@ the monospace font of a temporary [code block](#code-blocks) can aid if counting
 > ![Indent mechanics, rendered](images/list3.png)
 
 For Discord Markdown, only the first list line decides the list index (you can start with any ).
-Thus, the indices of your list don’t need to match (only the first index declares a bullet or the starting number).
+Thus, the indices of your list don’t need to match – only the first index declares a bullet or the starting number.
+Both `1. 1. 1.` and `1. 6. 9.` will show up autocorrected to `1. 2. 3.`.
 Consequently, bullet and numbered list can’t mix in the same (sub)list.
 
 ![Bullet points after a numbered list start becomes numbered lines](images/list4.png)[^d]
@@ -192,6 +193,18 @@ The more `#`s, the smaller the heading. Markdown supports up to six `#`s, though
 
 Yes, you can mix n’ match [Sweet Styles](#sweet-styles) inside your headings too.
 Headings are **Bold** by default though, so **Bold** does nothing in headings.
+
+
+## Discord Tags
+
+While not Markdown, Discord also uses some special syntaxes for things like mentions and channel tags:
+https://discord.com/developers/docs/reference#message-formatting
+
+Backslashes can also escape those, but effects are a bit inconsistent. For consistent results:
+* `<\@USER_ID>`, `<\#CHANNEL_ID>`, `<\@&ROLE_ID>`, etc.
+* alternatively: `<@USER_ID\>`, `<#CHANNEL_ID\>`, `<@&ROLE_ID\>`, etc.
+* `:100\:`
+* `\<:NAME:ID>`, `\<a:NAME:ID>`, `\<t:TIMESTAMP>`, etc.
 
 
 ---
