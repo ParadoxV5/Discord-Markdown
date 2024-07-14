@@ -91,7 +91,8 @@ Mobile does not support syntax highlighting (yet?).
 > <br> ⸺ Ruby Discord #rules [screenshotted PTB309567] (using with original author’s permission)
 
 Different languages have more-or-less different approaches to highlightable syntax.
-Complete list with previews (possibly different colors): [highlight.js demo](https://highlightjs.org/static/demo/)
+* (Almost) complete list with previews (possibly different colors): [highlight.js demo](https://highlightjs.org/demo)
+* `ansi` guide: https://gist.github.com/kkrypt0nn/a02506f3712ff2d1c8ca7c9e0aed7c06
 
 Note that if there’s a space anywhere on the line after the beginning backticks (where your language goes),
 Discord takes that you forgot the good habit and treats it as part of your content.
