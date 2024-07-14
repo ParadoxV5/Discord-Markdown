@@ -135,10 +135,9 @@ the monospace font of a temporary [code block](#code-blocks) can aid if counting
 > ```
 > ![Indent mechanics, rendered](images/list3.png)
 
-For Discord Markdown, only the first list line decides the list index (you can start with any ).
-Thus, the indices of your list don’t need to match – only the first index declares a bullet or the starting number.
-Both `1. 1. 1.` and `1. 6. 9.` will show up autocorrected to `1. 2. 3.`.
-Consequently, bullet and numbered list can’t mix in the same (sub)list.
+For Discord Markdown, the index of the first list line declares a bullet or the starting number.
+Effectively, the indices in your list don’t need to match – only the first index matters.
+All of `1. 1. 1.`, `1. 6. 9.` and even `1. * -` show up autocorrected to `1. 2. 3.`.
 
 ![Bullet points after a numbered list start becomes numbered lines](images/list4.png)[^d]
 
