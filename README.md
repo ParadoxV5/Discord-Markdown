@@ -86,7 +86,7 @@ Desktop/Web gets fancy-schmancy **syntax highlighting** in both the chat and the
 Mobile does not support syntax highlighting (yet?).
 
 > ![Ruby Discord Rule 7 (syntax highlighting)](images/code4.png)
-> <br> ⸺ Ruby Discord #rules [screenshotted PTB175517] (using with original author’s permission)
+> <br> ⸺ Ruby Discord #rules [screenshotted PTB309567] (using with original author’s permission)
 
 Different languages have more-or-less different approaches to highlightable syntax.
 Complete list with previews (possibly different colors): [highlight.js demo](https://highlightjs.org/static/demo/)
