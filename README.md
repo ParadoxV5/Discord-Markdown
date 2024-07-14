@@ -4,7 +4,6 @@
 [@matthewzring]: https://github.com/matthewzring
 [101 Guide]: https://gist.github.com/matthewzring/9f7bbfd102003963f9be7dbcf7d40e51
 
-
 # Discord Markdown 201
 
 Wanna inject some flavor into your everyday text chat? You’re in luck!
@@ -17,6 +16,7 @@ Just add a few ornaments around your text to change it!
 > You’ll see the arms of your customized shruggie as you’d like!
 > 
 > ![shruggie](images/markdown0.png)
+
 
 ## Sweet Styles
 
@@ -45,14 +45,16 @@ You can even mix n’ match formatting options into more powerful ones, such as 
 
 Just dropping a web address without the `[]()` markdown also *links* it up,
 which you’ve probably done several times. Note that a “plain” link isn’t based on Markdown, so `\` won’t “unlink” it.
+
 Both “plain” and “masked” links also supports previews if the linked site has them set up.
+To preëmptively squelch the preview, surround the web address with `<…>`, e.g.,
+`[Rick Roll](<https://www.youtube.com/watch?v=dQw4w9WgXcQ>)`
 
 ![Two formats of links and their previews](images/link1.png)
 
 By the way, Discord found a way to stop you from hiding rickrolls or malware behind legit links.
 
 ![Cannot format a link with a link](images/link2.png)
-
 
 
 ## Code Blocks
@@ -201,8 +203,10 @@ It’s like an anti-heading, just also not **Bold** by default, and also gray.
 
 ## Discord Tags
 
-While not Markdown, Discord also uses some special syntaxes for things like mentions and channel tags:
+While not Markdown, Discord’s things like mentions and channel tags are also text-based structures internally:
 https://discord.com/developers/docs/reference#message-formatting
+
+Timestamp Generator: https://hammertime.cyou
 
 Backslashes can also escape those, but effects are a bit inconsistent. For consistent results:
 * `<\@USER_ID>`, `<\#CHANNEL_ID>`, `<\@&ROLE_ID>`, etc.
@@ -210,11 +214,21 @@ Backslashes can also escape those, but effects are a bit inconsistent. For consi
 * `:100\:`
 * `\<:NAME:ID>`, `\<a:NAME:ID>`, `\<t:TIMESTAMP>`, etc.
 
+### More Fun Stuff
+
+* On Desktop/Web, you can bring out a flyout to tag non-text channels (Voice, Guide, etc.) with `#!channel`
+  
+  ![non-text channels flyout](images/shebang.png)
+  
+* If you start your message with `@silent` (followed by space or newline), that message won’t push device notifications.
+(Explicit `@`pings are still highlighted and counted). See: https://github.com/discord/discord-api-docs/commit/b7d6467
+  
+  ![This is a @silent message.](images/silent.png)
+  
 
 ---
 
 > And now you’re a **Discord text Markdown super-expert**. Go out there and highlight your accomplishments!
-
 
 [^x]: This does not apply on Desktop/Web if a space follows the first `*` (i.e., `* text*` or `* text *`)
   [tested Web 198920, Desktop PTB 198953]; it also does not apply on Mobile if a space precedes the second `*`
