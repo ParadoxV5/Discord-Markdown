@@ -50,8 +50,6 @@ Both “plain” and “masked” links also supports previews if the linked sit
 ![Two formats of links and their previews](images/link1.png)
 
 By the way, Discord found a way to stop you from hiding rickrolls or malware behind legit links.
-Perhaps this sanitization is why Discord hot-reverted the newer Markdown features
-and didn’t reïntroduce links until a couple of months after the others returned.
 
 ![Cannot format a link with a link](images/link2.png)
 
@@ -158,7 +156,6 @@ such as Google or (back when Replies weren’t a thing) other people’s message
 On Mobile (and ancient versions of Discord such as the one 101 used),
 `>>> ` at the beginning of a line of text puts that line and the rest of your message in a multiline block quote.[^d]
 This saves you the need to punch `> ` on every line, especially for a long passages.
-[This screenshot was retaken on Mobile 175.16; Mobile 165.15 was missing the gray quote-indent line.]
 
 ![multiline block quote](images/quote3.png)
 
@@ -213,8 +210,8 @@ Backslashes can also escape those, but effects are a bit inconsistent. For consi
 
 
 [^x]: This does not apply on Desktop/Web if a space follows the first `*` (i.e., `* text*` or `* text *`)
-  [tested Web 192149 & 198920, Desktop PTB 193325 & 198953]; it also does not apply on Mobile if a space precedes the second `*`
-  (i.e., `*text *` or `* text *`) [tested Mobile 175.16 & 178.19].
+  [tested Web 198920, Desktop PTB 198953]; it also does not apply on Mobile if a space precedes the second `*`
+  (i.e., `*text *` or `* text *`) [tested Mobile 178.19].
 [^d]: These are possibly unique to Discord’s Markdown and not found on other Markdown apps like GitHub.
 [^s]: Also check out: [Discord’s support article on spoilers](https://support.discord.com/hc/en-us/articles/360022320632-Spoiler-Tags-)
 [^n]: *Huh? You didn’t know you can send multiline messages on Desktop/Web with `⇧ Shift` + `↩ Enter`/`⌅ Return`?*
