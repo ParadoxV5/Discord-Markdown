@@ -187,8 +187,16 @@ The more `#`s, the smaller the heading. Markdown supports up to six `#`s, though
 
 ![headings](images/headings.png)
 
-Yes, you can mix n’ match [Sweet Styles](#sweet-styles) inside your headings too.
+Yes, you can mix n’ match [Sweet Styles](#sweet-styles) (inlcuding `` `code` ``) inside your headings too.
 Headings are **Bold** by default though, so **Bold** does nothing in headings.
+
+### Small Text
+
+New (Desktop PTB309567, Web 309513, Mobile 237.13) and unique[^d] to Discord
+is the syntax to make a line of text *quieter* with `-#` plus one or more spaces.
+It’s like an anti-heading, just also not **Bold** by default, and also gray.
+
+![small](images/small.png)
 
 
 ## Discord Tags
