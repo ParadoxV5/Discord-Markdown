@@ -40,6 +40,9 @@ It doesn’t show on the Desktop/Web preview (at this writing), but *formatting 
 
 ![Formatting Gallery, using multiline text](images/markdown2.png)
 
+In the non-legacy chat input on Desktop/Web, if your clipboard has a link queued up,
+you can also quickly link it on some text by selecting them and *pasting* in-place (Right-Click–Paste works too!).
+
 You can even mix n’ match formatting options into more powerful ones, such as ***<u>underline bold italics</u>***
 (`**___underline bold italics___**` or `*__**underline bold italics**__*` or etc.).
 
