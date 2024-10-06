@@ -1,8 +1,10 @@
 > Kudos to [@matthewzring][] (and `Discord@Frosty#9449`) for the [101 Guide][] (from which this guide was modified).
 > But – if only it’s enough! Discord needs some comprehensive and updated documentation…
+> …and naw, they *did* finally published [a (new) official guide][Official Guide], but it still doesn’t come close…
 
 [@matthewzring]: https://github.com/matthewzring
 [101 Guide]: https://gist.github.com/matthewzring/9f7bbfd102003963f9be7dbcf7d40e51
+[Official Guide]: https://discord.com/blog/make-your-discord-messages-bold-italic-underlined-and-more
 
 # Discord Markdown 201
 
@@ -54,6 +56,10 @@ To preëmptively squelch the preview, surround the web address with `<…>`, e.g
 `[Rick Roll](<https://www.youtube.com/watch?v=dQw4w9WgXcQ>)`
 
 ![Two formats of links and their previews](images/link1.png)
+
+Pro tip (and image too) [from the Discord blogger][Official Guide]: links inside spoilers also have their embed in spoilers!
+
+![Spoiler embed](https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66da07d801110cce3c9f241b_AD_4nXfURwEhmRGu-33geCclBvU-RabTPcOXLeYflOukaYadGbm0K0fAzxNgvFOFkIBoLg203dQDyfJIfK7OY0NGQlJ_3fkt2PT_Tr_fz-Th0JdAK3EXqgI7dHIOBIqxNrVXvIFJ5o-IHYFQVqbtHoipTXnBWEny.png)
 
 By the way, Discord found a way to stop you from hiding rickrolls or malware behind legit links.
 
