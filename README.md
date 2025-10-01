@@ -29,10 +29,11 @@ Just add a few ornaments around your text to change it!
 | <u>Underline</u> | `__Underline__`[^d] |
 | ~~Strikethrough~~ | `~~Strikethrough~~` |
 | ![black rectangle](assets/spoiler0.png) ![spoiler text revealed](assets/spoiler1.png) | `\|\|Spoiler\|\|`[^d][^s] |
-| [Link](https://example.com) | `[Link](https://example.com)` |
+| [Custom link](https://example.com) | `[Custom link](https://example.com)` |
+| <auto_link@example.com> | `<auto_link@example.com>` |
 
 On Desktop/Web, you can see a preview of your text formatted with these options
-(except for [Link](https://example.com/)) right in the message box.
+(except for [custom Link](https://example.com/)) right in the message box.
 You’re gonna need some imagination if you are a Mobile user or switched on the
 *legacy chat input* in the Accessibility settings 👌.
 
@@ -48,11 +49,21 @@ you can also quickly link it on some text by selecting them and *pasting* in-pla
 You can even mix n’ match formatting options into more powerful ones, such as ***<u>underline bold italics</u>***
 (`**___underline bold italics___**` or `*__**underline bold italics**__*` or etc.).
 
-Just dropping a web address without the `[]()` markdown also *links* it up,
-which you’ve probably done several times. Note that a “plain” link isn’t based on Markdown, so `\` won’t “unlink” it.
+### Automatic Link
 
-Both “plain” and “masked” links also supports previews if the linked site has them set up.
-To preëmptively squelch the preview, surround the web address with `<…>`, e.g.,
+A little-known feature from the OG Markdown specifications is the linking of webpage, email and phone numbers (what year is this) by surrounding it with angle brackets (`<`…`>`).[^a]
+No need for full-form links with [`mailto:`/`tel:`](https://en.wikipedia.org/wiki/List_of_URI_schemes)!
+
+The phone number must start with [a `+` (representing the international calling prefix)](https://en.wikipedia.org/wiki/E.164#Uses_of_E.164_numbers), have at least 2 digits, and can have dashes (`-`), spaces (` `) or dots (`.`) between digits.
+
+![Automatic links](assets/link0.png)
+
+What’s more common, though, is simply dropping a web address without the `[]()` or `<>` markdown, which you’ve probably done several times.
+This only works for webpages, though, not emails and phone numbers, even with the `mailto:`/`tel:`.
+Also, note that a “plain” link isn’t based on Markdown, so `\` won’t “unlink” it.
+
+Both “plain” and “masked” links – but not “angle-bracketed” links – also supports previews if the linked site has them set up.
+To preëmptively squelch the preview, surround the web address with `<…>` like with a “angle-bracketed” link, e.g.,
 `[Rick Roll](<https://www.youtube.com/watch?v=dQw4w9WgXcQ>)`
 
 ![Two formats of links and their previews](assets/link1.png)
@@ -246,3 +257,4 @@ Backslashes can also escape those, but effects are a bit inconsistent. For consi
 [^d]: These are possibly unique to Discord’s Markdown and not found on other Markdown apps like GitHub.
 [^s]: Also check out: [Discord’s support article on spoilers](https://support.discord.com/hc/en-us/articles/360022320632-Spoiler-Tags-)
 [^n]: *Huh? You didn’t know you can send multiline messages on Desktop/Web with `⇧ Shift` + `↩ Enter`/`⌅ Return`?*
+[^a]: [Markdown: Syntax § Automatic Links @ Daring Fireball](https://daringfireball.net/projects/markdown/syntax#autolink)
